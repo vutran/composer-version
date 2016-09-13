@@ -1,7 +1,7 @@
 {
   "name": "composer-version",
-  "version": "3.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Command-line helper for Composer to bump versions similar to npm version.",
   "main": "index.js",
   "files": [
     "cli.js",
