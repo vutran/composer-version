@@ -2,19 +2,17 @@
   "name": "composer-version",
   "version": "0.1.0",
   "description": "Command-line helper for Composer to bump versions similar to npm version.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "files": [
-    "cli.js",
-    "git.js",
-    "index.js",
-    "utils.js"
+    "lib"
   ],
   "bin": {
-    "composer-version": "./cli.js"
+    "composer-version": "./lib/cli.js"
   },
   "author": "Vu Tran <vu@vu-tran.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.14.0",
     "babel-eslint": "^6.1.2",
     "babel-jest": "^15.0.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
@@ -27,6 +25,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
   }
 }
