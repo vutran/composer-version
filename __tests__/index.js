@@ -1,4 +1,4 @@
-import utils from '../utils';
+import utils from '../src/utils';
 
 describe('utils', () => {
   it('should get the next major version', () => {
